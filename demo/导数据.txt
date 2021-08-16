@@ -1,0 +1,19 @@
+1、man库导出
+sybiq用户登入服务器db4在服务器界面直接执行如下：
+bcp OIL_MAN..inv_oildetail_ase_mid                     out /backup/iqdata/query.test20200717.dat                    -c -Jiso_1 -t "@|@" -r "@|@#\n#" -Uman -Pman_ps -Srp90_mandb
+
+2、查看文件
+cd /backup/iqdata/
+ll 查看是否已导出dat文件
+
+3、iq导入
+用DBA用户登入数据db4执行如下
+set quoted_identifier on
+go
+
+
+proc_dat_import 'query','test20200717'
+GO
+
+导完后在执行
+commit
