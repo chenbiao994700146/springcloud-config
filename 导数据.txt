@@ -1,13 +1,13 @@
-1¡¢man¿âµ¼³ö
-sybiqÓÃ»§µÇÈë·şÎñÆ÷db4ÔÚ·şÎñÆ÷½çÃæÖ±½ÓÖ´ĞĞÈçÏÂ£º
+1ã€manåº“å¯¼å‡º
+sybiqç”¨æˆ·ç™»å…¥æœåŠ¡å™¨db4åœ¨æœåŠ¡å™¨ç•Œé¢ç›´æ¥æ‰§è¡Œå¦‚ä¸‹ï¼š
 bcp OIL_MAN..inv_oildetail_ase_mid                     out /backup/iqdata/query.test20200717.dat                    -c -Jiso_1 -t "@|@" -r "@|@#\n#" -Uman -Pman_ps -Srp90_mandb
 
-2¡¢²é¿´ÎÄ¼ş
+2ã€æŸ¥çœ‹æ–‡ä»¶
 cd /backup/iqdata/
-ll ²é¿´ÊÇ·ñÒÑµ¼³ödatÎÄ¼ş
+ll æŸ¥çœ‹æ˜¯å¦å·²å¯¼å‡ºdatæ–‡ä»¶
 
-3¡¢iqµ¼Èë
-ÓÃDBAÓÃ»§µÇÈëÊı¾İdb4Ö´ĞĞÈçÏÂ
+3ã€iqå¯¼å…¥
+ç”¨DBAç”¨æˆ·ç™»å…¥æ•°æ®db4æ‰§è¡Œå¦‚ä¸‹
 set quoted_identifier on
 go
 
@@ -15,5 +15,7 @@ go
 proc_dat_import 'query','test20200717'
 GO
 
-µ¼ÍêºóÔÚÖ´ĞĞ
+å¯¼å®Œååœ¨æ‰§è¡Œ
 commit
+
+ccc
